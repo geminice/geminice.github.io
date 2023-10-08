@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Вохрамеева</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto, sans-serif;
+            /* border: 1px solid #ddd; */
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .avatar, .contacts, h1 {
+        display: inline;
+        }
+        .contacts {
+            position: relative;
+            top: -90px;
+        }
+        .contacts p {
+            position: relative;
+            top: 28px;
+            left: 115px;
+            font-size: 12px;
+            width: 200px;
+        }
+        .head {
+            height: 150px;
+        }
+        div.background {
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        }
+
+        .bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+        }
+        .img {
+            position: relative;
+        }
+        div.jobEduc, div.skills, div.exp {
+            position: relative;
+            width: 500px;
+        }
+        .cv {
+        background-image: url("фон-подложка.png");
+        /* background-color: #ddd; */
+        background-size: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        width: 570px;
+        position: relative;
+        margin: 30px;
+        padding: 10px;
+        }
+        .job, .educ, .skills, .exp {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+        .jobEduc p, .jobEduc li, .skills p, .exp table {
+            font-size: 14px;
+        }
+        table {
+            margin-top: 10px;
+            border: 1px solid #ddd;
+        }
+        tr, td {
+            border: 1px solid #ddd;
+            padding: 2px;
+        }
+        th {
+            font-size: 12px;
+            text-align: left;
+            padding: 3px;
+        }
+        h5 {
+            color: #7D7E79;
+            font-style: italic;
+        }
+        li {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+    <img class="bg-img" src="фон главный.png" alt="фон главный">
+    </div>
+    <div class="container">
+        <div class="cv">
+
+             <!-- аватар + фио и телефон -->
+            <div class="head">
+                <div class="avatar">
+                    <img class="img" src="avatar1.png" alt="avatar">
+                </div>
+                <div class="contacts">
+                    <h1>Вохрамеева Екатерина Андреевна</h1>
+                    <p>30.07.1991</p>
+                    <p>+7 965 297 22 37</p>
+                    <p>dragonfly123@mail.ru</p>
+                    <p>Проживает: Москва</p>
+                </div>
+            </div>
+
+            <!-- желаемая должность + образование-->
+            <div class="jobEduc">
+                <div class="job">
+                    <h5>Желаемая должность</h5>
+                    <p>Frontend разработчик junior</p>
+                </div>
+                <div class="educ">
+                    <h5>Образование</h5>
+                    <p>Высшее: Финансовый Университет при Правительстве РФ</p>
+                    <p>Дополнительное:</p>
+                    <ul>
+                        <li>курсы по UX/UI дизайну</li>
+                        <li>курсы по HTML, CSS, JS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skills">
+                <!-- навыки -->
+                <h5>Навыки</h5>
+                <p>CJM, JTBD, CastDev, Figma, HTML, CSS, JS</p>
+            </div>
+
+            <div class="exp">
+                <!-- опыт работы -->
+                <h5>Опыт работы</h5>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Место работы, срок</th>
+                            <th>Функционал</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>СберИнвестиции, 2022</td>
+                            <td>UX аналитик клиентского опыта</td>
+                        </tr>
+                        <tr>
+                            <td>МТС банк, 2021</td>
+                            <td>UX/UI дизайнер</td>
+                        </tr>
+                        <tr>
+                            <td>Альфа-банк, 2014-2017</td>
+                            <td>менеджер по продажам и сопровождению юр.лиц</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
